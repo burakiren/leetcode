@@ -42,11 +42,10 @@ class PlusOne {
      */
 
     fun plusOne(digits: IntArray): IntArray {
-        var updatedDigits = (digits.joinToString().replace(", ", "").toBigInteger().plus(BigInteger.ONE)).toString()
-        val array = Array(updatedDigits.length) {
+        val updatedDigits = (digits.joinToString().replace(", ", "").toBigInteger().plus(BigInteger.ONE)).toString()
+        return IntArray(updatedDigits.length) {
             updatedDigits[it].toString().toInt()
         }
-        return array.toIntArray()
     }
 
     fun plusOne2(digits: IntArray): IntArray {
