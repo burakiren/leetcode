@@ -1,4 +1,4 @@
-package easy
+package removeDuplicatedFromSortedArray
 
 class RemoveDuplicatedFromSortedArray26 {
 
@@ -7,7 +7,7 @@ class RemoveDuplicatedFromSortedArray26 {
         var duplicated = nums.groupBy { it }
         var keyList = duplicated.keys.toList()
 
-        for (i in 0..keyList.size - 1) {
+        for (i in keyList.indices) {
             nums[i] = keyList[i]
         }
         return duplicated.size

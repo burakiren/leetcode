@@ -1,6 +1,6 @@
-package easy
+package mergeTwoSortedLists
 
-import org.w3c.dom.NodeList
+import easy.ListNode
 
 
 /**
