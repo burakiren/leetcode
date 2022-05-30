@@ -1,4 +1,4 @@
-package clibingStairs
+package clibing_stairs
 
 
 /*
